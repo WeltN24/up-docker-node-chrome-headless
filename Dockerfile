@@ -9,11 +9,11 @@ RUN apt-get update && apt-get install -y \
 	apt-transport-https \
 	ca-certificates \
 	curl \
-    gnupg \
-    git \
+	gnupg \
+	git \
 	python-pip \
-    python2.7 \
-    python2.7-dev \
+	python2.7 \
+	python2.7-dev \
 	groff-base \
 	--no-install-recommends
 
@@ -32,12 +32,12 @@ RUN apt-get update && apt-get install -y \
 
 # Add Chrome as a user
 RUN groupadd -r chrome && useradd -r -g chrome -G audio,video chrome \
-    && mkdir -p /home/chrome && chown -R chrome:chrome /home/chrome
+	&& mkdir -p /home/chrome && chown -R chrome:chrome /home/chrome
 
 # Add Jenkins as a user
 RUN groupadd -r jenkins && useradd -r -g jenkins -G audio,video,sudo jenkins \
-    && mkdir -p /home/jenkins && chown -R jenkins:jenkins /home/jenkins
+	&& mkdir -p /home/jenkins && chown -R jenkins:jenkins /home/jenkins
 
-# Install Node / NPM / yaen
+# Install node / npm / yarn
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && apt-get install -y nodejs
-RUN npm --global install yarn
+RUN npm --global install yarn@0.27.5
