@@ -24,10 +24,11 @@ This Docker image is maintained by WeltN24 GmbH Developers and its main purpose 
 - Login to Docker Hub is done via personalized accounts, which have to be connected to [r/springmedia](https://hub.docker.com/u/springmedia/)
 
 ## How to install a specific version of node?
-1. Find your desired version here: [https://deb.nodesource.com/node_10.x/pool/main/n/nodejs/](https://deb.nodesource.com/node_10.x/pool/main/n/nodejs/)
+1. Find your desired version here: [https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/](https://deb.nodesource.com/node_12.x/pool/main/n/nodejs/)
 1. Replace .deb url in Dockerfile
 
 ## Changelog
+- **2019-11-18**: `Chrome 78`, `node 12.13.0`, `yarn 1.19.1`
 - **2019-05-08**: `Chrome 74`, `node 10.15.3`, `yarn 1.15.2`
 - **2018-10-01**: `Chrome 69`, `node 10.9`, `yarn 1.10.1`
 - **2018-06-28**: `Chrome 67`, `node 10.5`, `yarn 1.7.0`
