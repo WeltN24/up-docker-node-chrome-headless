@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:bionic
 
 MAINTAINER Harry <harald.urban@weltn24.de>
 LABEL vendor="WeltN24 Team Rabbit"
@@ -47,7 +47,7 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends
 
 # Find your desired version here: https://deb.nodesource.com/node_14.x/pool/main/n/nodejs/
-# Ubuntu 16.04.3 LTS (Xenial Xerus) (https://wiki.ubuntu.com/Releases)
+# Ubuntu 18 LTS (Bionic) (https://wiki.ubuntu.com/Releases)
 ENV NODE_VERSION=14.16.1
 
 RUN curl https://deb.nodesource.com/node_14.x/pool/main/n/nodejs/nodejs_$NODE_VERSION-1nodesource1_amd64.deb > node.deb \
